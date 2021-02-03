@@ -119,6 +119,55 @@ $(".input-phone").mask("+7 (999) 999-99-99");
 		]
 	});
 
+	$('.slider-card').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				arrows: false,
+				dots: true,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				arrows: false,
+				dots: true,
+			}
+		}
+		]
+	});
+
+	$(".item-complectation__head").click(function(e) {
+		e.preventDefault();
+		$(".item-complectation").removeClass("active");
+		$(".item-complectation__content").slideUp(200);
+		if ($(this).siblings(".item-complectation__content").is(":hidden")) {
+			$(this).parent().addClass("active");
+			$(this).siblings(".item-complectation__content").slideDown(200);
+
+		} else {
+			$(this).parent().removeClass("active");
+			$(this).siblings(".item-complectation__content").slideUp(200);
+
+		}
+	});
+
 
 	 // стайлер для select
 	 $('select').styler();

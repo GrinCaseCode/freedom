@@ -65,6 +65,12 @@
 .billbord__content {
     height: calc(100vh - 88px);
 }
+.item-complectation__icon {
+    margin-left: 15px;
+}
+.item-complectation__head {
+    font-size: 21px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -185,6 +191,9 @@
 }
 .about .head-section {
 	margin-bottom: 35px;
+}
+.billbord-page_card .title-big + .descr-billbord {
+    padding-top: 25px;
 }
 }
 
