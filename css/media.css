@@ -620,7 +620,10 @@ body {
       position: relative;
     }
     .options-wrap {
-      padding-top: 20px;
+      padding-top: 20px;  
+    }
+    .item-complectation__price {
+      padding-top: 10px;
     }
 }
 
