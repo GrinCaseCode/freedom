@@ -135,17 +135,15 @@ $(".input-phone").mask("+7 (999) 999-99-99");
 			}
 		},
 		{
-			breakpoint: 768,
+			breakpoint: 992,
 			settings: {
 				slidesToShow: 2,
-				arrows: false,
-				dots: true,
 			}
 		},
 		{
-			breakpoint: 480,
+			breakpoint: 768,
 			settings: {
-				slidesToShow: 1,
+				slidesToShow: 2,
 				arrows: false,
 				dots: true,
 			}
